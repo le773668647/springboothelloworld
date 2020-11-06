@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
  * @author zzzz
  * @create 2019-10-15 下午12:15
  */
-@Component
 public class Doctor {
     private String id;
     private String name;
