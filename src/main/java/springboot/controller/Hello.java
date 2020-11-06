@@ -26,8 +26,11 @@ public class Hello {
     @RequestMapping("/find/{id}")
     @ResponseBody
  public Doctor find(@PathVariable("id") int i){
-
-        return  service.search(i);
+        Doctor result = new Doctor();
+        result.setId("1");
+        result.setName("aa");
+        result.setObject("cc");
+        return  result;
 
  }
 }
