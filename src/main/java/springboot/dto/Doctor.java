@@ -1,7 +1,4 @@
-package springboot.zz;
-
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Component;
+package springboot.dto;
 
 /**
  * @author zzzz

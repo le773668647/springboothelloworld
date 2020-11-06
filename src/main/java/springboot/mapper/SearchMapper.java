@@ -1,8 +1,7 @@
-package springboot.service;
+package springboot.mapper;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
-import springboot.zz.Doctor;
+import springboot.dto.Doctor;
 
 /**
  * @author zzzz
@@ -10,6 +9,6 @@ import springboot.zz.Doctor;
  */
 
 @Repository
-public interface SearchService {
+public interface SearchMapper {
     public Doctor search(int i);
 }

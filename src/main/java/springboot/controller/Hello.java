@@ -5,8 +5,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import springboot.service.SearchService;
-import springboot.zz.Doctor;
+import springboot.mapper.SearchMapper;
+import springboot.dto.Doctor;
 
 /**
  * @author zzzz
@@ -16,21 +16,21 @@ import springboot.zz.Doctor;
 public class Hello {
     @ResponseBody
     @RequestMapping("/hello")
-    public String hello(){
+    public String hello() {
         return "hello world";
     }
 
     @Autowired
-    SearchService service;
+    SearchMapper service;
 
     @RequestMapping("/find/{id}")
     @ResponseBody
- public Doctor find(@PathVariable("id") int i){
+    public Doctor find(@PathVariable("id") int i) {
         Doctor result = new Doctor();
         result.setId("1");
         result.setName("aa");
         result.setObject("cc");
-        return  result;
+        return result;
 
- }
+    }
 }
